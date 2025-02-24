@@ -1,5 +1,4 @@
 import FallingAnimation from '@/animation/animation'
-import MovingAnimation from '@/animation/animation'
 import Link from 'next/link'
 import React from 'react'
 import {  signOut } from "firebase/auth";

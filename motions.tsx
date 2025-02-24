@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 export const cardVariants = {
    
     initial: { opacity: 1, scale: 1, boxShadow: "0px 0px 0px rgba(255, 255, 255, 0.3)" },
