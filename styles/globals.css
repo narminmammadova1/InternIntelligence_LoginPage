@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #0a0a0a
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: #032e20;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes flash {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+    box-shadow: 0 0 00px rgba(255, 255, 255, 1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.flash {
+  animation: flash 0.3s ease-out;
+}
