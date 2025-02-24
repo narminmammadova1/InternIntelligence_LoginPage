@@ -52,7 +52,7 @@ const [isLoading,setIsLoading]=useState(false)
 
       
     } catch (err) {
-      // console.error("Signup error:", err);
+       console.log("Signup error:", err);
       toast.error("This user already exists")
 
     }
